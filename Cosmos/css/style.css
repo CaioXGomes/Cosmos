@@ -1,0 +1,109 @@
+@charset "UTF-8";
+body {
+  background: linear-gradient(180.02deg, #000000 -44.98%, rgba(29, 29, 29, 0) 72.8%), #131414;
+  height: 6990px;
+}
+
+header {
+  width: 100%;
+  height: 110px;
+  border: 1px solid red;
+  padding-top: 5px;
+}
+
+nav {
+  width: 1416px;
+  margin: 0 auto;
+  border: 1px solid red;
+  height: 100px;
+  display: flex;
+  color: white;
+  align-items: center;
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin-left: 25%;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-style: Regular;
+  text-align: left;
+  font-family: Source Sans Pro;
+  font-weight: 250;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+li {
+  padding-left: 50px;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  font-style: ExtraLight;
+  font-family: Sora;
+  font-weight: 200;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+} /*# sourceMappingURL=style.css.map */
+.seja-bem-vindo-a-cosmos {
+  font-size: 60px;
+  line-height: 100%;
+}
+
+/********************************Container Principal*********************************/
+main {
+  width: 1416px;
+  height: 6690px;
+  position: relative;
+  background: red;
+  margin: 0 auto;
+}
+
+/***************************Landing Page*************************************/
+.landing-page-home {
+  width: 100%;
+  height: 1090px;
+  background: gray;
+  position: absolute;
+}
+
+.landing-page-orbita {
+  width: 1140px;
+  height: 940px;
+  position: absolute;
+  margin-left: -550px;
+  background: url("img/Órbita.svg");
+}
+
+.landing-page-welcome-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  margin-top: 180px;
+  justify-content: end;
+  align-items: center;
+  background: yellow;
+}
+
+.landing-page-welcome-container-seja-bem-vindo {
+  width: 580px;
+  height: 180px;
+  margin-right: 50px;
+  padding-bottom: 0px;
+  background: pink;
+  text-align: center;
+}
+
+.landing-page-welcome-container-img-logo-central {
+  width: 400px;
+  height: 350px;
+  background: white;
+  margin-right: 38px;
+}/*# sourceMappingURL=style.css.map */
