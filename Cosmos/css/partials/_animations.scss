@@ -1,7 +1,8 @@
 ul li{
-    transition: 0.10s ease;
+    transition: 0.00001s ease;
+    cursor: pointer;
 }
 
 ul li:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }

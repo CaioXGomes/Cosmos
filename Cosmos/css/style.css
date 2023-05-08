@@ -1,10 +1,11 @@
 @charset "UTF-8";
 ul li {
-  transition: 0.1s ease;
+  transition: 0.00001s ease;
+  cursor: pointer;
 }
 
 ul li:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 * {
@@ -35,7 +36,7 @@ nav {
   position: relative;
 }
 
-ul {
+ul.navbar-menu-lista {
   list-style-type: none;
   display: flex;
   margin-left: 25%;
@@ -52,7 +53,7 @@ ul {
 }
 
 li {
-  padding-left: 50px;
+  padding-left: 30px;
 }
 
 h1 {
@@ -161,6 +162,26 @@ main {
   background: red;
 }
 
+ul.quem-somos-lista {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-align: left;
+  font-family: Source Sans Pro;
+  font-weight: 250;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+ul.quem-somos-lista li {
+  padding: 0;
+}
+
 .quem-somos-cards {
   width: 620px;
   height: 620px;
@@ -193,6 +214,14 @@ main {
   border-radius: 40px;
   margin-top: 10px;
   background: #D9D9D9;
+}
+
+.background-linhas-1 {
+  width: 2500px;
+  height: 1415px;
+  margin: 1265px auto 0;
+  margin-left: 1295px;
+  position: absolute;
 }
 
 /***************************TalkTech*************************************/
