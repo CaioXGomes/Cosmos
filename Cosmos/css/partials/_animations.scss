@@ -1,0 +1,14 @@
+ul li{
+    transition: 0.00001s ease;
+    cursor: pointer;
+}
+
+ul li:hover{
+    transform: scale(1.1);
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
