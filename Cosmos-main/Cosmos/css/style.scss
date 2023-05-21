@@ -1,0 +1,439 @@
+@import "partials/colors";
+@import "partials/layout";
+@import "partials/typography";
+@import "partials/animations";
+@import "partials/buttons";
+
+
+$container-w: 1416px;
+$container-h: 1300px;
+
+*, *::after, *::before{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background: #0c0c0c;
+   width: 100%;
+   height: 100vh;
+   scroll-behavior: smooth;
+   position: relative;
+}
+//////////////////////////////Estrelas////////////////////////////////////////////
+/*.container-stars{
+   width: 600px;
+   height: 600px;
+   display: flex;
+   position: relative;
+   background: #2500aa;
+   
+}*/
+
+/*.container-stars span {
+   position: absolute;
+   width: 10px;
+   border-radius: 50%;
+   height: 10px;
+   animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+   background: #f1edf5;
+   box-shadow: 0px 0px 11.4912px #CFCCCC, 0px 0px 6.5664px #CFCCCC, 0px 0px 3.8304px #CFCCCC, 0px 0px 1.9152px #CFCCCC, 0px 0px 0.5472px #CFCCCC, 0px 0px 0.2736px #CFCCCC; 
+   
+}
+
+span.star-1{
+   position: absolute;
+   width: 20px;
+   border-radius: 50%;
+   height: 20px;
+   animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+   background: #f1edf5;
+   box-shadow: 0px 0px 11.4912px #CFCCCC, 0px 0px 6.5664px #CFCCCC, 0px 0px 3.8304px #CFCCCC, 0px 0px 1.9152px #CFCCCC, 0px 0px 0.5472px #CFCCCC, 0px 0px 0.2736px #CFCCCC; 
+   
+}*/
+
+ 
+header {
+   width: 100%;
+   height: 110px;
+   border: 1px solid red;
+   padding-top: 5px;
+}
+ 
+nav {
+   max-width: 1416px;
+   margin: 0 auto;
+   border: 1px solid red;
+   height: 100px;
+   display: flex;
+   color: white;
+   align-items: center;
+   position: relative;
+   justify-content: space-between;
+   padding: 0px 32px;
+}
+ 
+ul.navbar-menu-lista{
+   list-style-type: none;
+   display: flex;
+   color: rgb(255, 255, 255);
+   font-size: 24px;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   font-style: Regular;
+   text-align: left;
+   font-family: Source Sans Pro;
+   font-weight: 250;
+   line-height: normal;
+   font-stretch: normal;
+   text-decoration: none;
+ }
+
+li{
+   padding-left: 30px;
+}
+
+.seja-bem-vindo-a-cosmos{
+   font-size: 60px;
+   line-height: 100%;
+}
+
+/********************************Container Principal*********************************/
+main{
+   max-width: $container-w;
+   position: relative;
+   background: red;
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   margin: 0 auto;
+}
+ 
+
+/***************************Landing Page*************************************/
+
+div.landing-page-container-home{
+   width: 100%;
+   height: $container-h;
+   background: gray;
+}
+
+div.landing-page-orbita{
+   width: 1140px;
+   height: 940px;
+   position: absolute;
+   margin-left: -1600px;
+  
+   background: url("img/Órbita.svg")
+}
+
+
+
+.landing-page-welcome-container{
+   width: 100%;
+   height: 400px;
+   display: flex;
+   margin-top: 180px;
+   justify-content: end;
+   align-items: center;
+   background: yellow;
+}
+
+.landing-page-welcome-container-seja-bem-vindo{
+   width: 580px;
+   height: 180px;
+   margin-right: 50px;
+   padding-bottom: 0px;
+   background: pink;
+   text-align: center;
+}
+
+div.landing-page-welcome-container-img-logo-central{
+   width: 400px;
+   height: 350px;
+   background: white;
+   margin-right: 38px;
+}
+div.landing-page-welcome-container-img-logo-central::hover{
+   cursor: pointer;
+}
+
+/***************************Quem Somos*************************************/
+
+section.quem-somos-container-home{
+   max-width: $container-w;
+   height: $container-h;
+   margin: 32px auto;
+   display: flex;
+   position: relative;
+   align-items:flex-start;
+   background: purple;
+}
+
+.container-conteudo{
+   width: $container-w;
+   height: 720px;
+   margin-top: 338px;
+   display: flex;
+   justify-content: space-around;
+   background: #2500aa;
+}
+
+.quem-somos-text{
+   width: 560px;
+   height: 470px; 
+   margin-top: 98px;
+   background: red;
+}
+
+.quem-somos-text p{
+   margin-top: 30px;
+}
+
+ul.quem-somos-lista{
+   list-style-type: none;
+   display: flex;
+   flex-direction: column;
+   margin: 0 0;
+   color: rgb(255, 255, 255);
+   font-size: 20px;
+   text-align: left;
+   font-family: Source Sans Pro;
+   font-weight: 250;
+   line-height: normal;
+   font-stretch: normal;
+   text-decoration: none;
+   margin-top: 65px;
+}
+
+ul.quem-somos-lista li{
+   padding: 0;
+}
+
+.quem-somos-cards{
+   width: 620px;
+   height: 620px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   
+   
+   justify-content: center;
+   align-items: center;
+   margin-top: 38px;
+   background: yellow;
+}
+
+.quem-somos-cards-card-1{
+   width: 320px;
+   height: 480px;
+   border-radius: 40px;
+   background-image: url(../img/masqueico-gordinho.jpg);
+   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   background: #D9D9D9;
+}
+
+.quem-somos-cards-card-2{
+   width: 220px;
+   height: 300px;
+   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   border-radius: 40px;
+   background: #D9D9D9;
+}
+
+.quem-somos-cards-card-3{
+   width: 220px;
+   height: 300px;
+   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+   border-radius: 40px;
+   margin-top: 10px;
+   background: #D9D9D9;
+}
+
+.background-linhas-1{
+   width: 2500px;
+   height: 1415px;
+   margin: 1265px auto 0;
+    margin-left: 1295px;
+   position: absolute;
+}
+/***************************TalkTech*************************************/
+
+section.talktech-container-home{
+   max-width: $container-w;
+   height: $container-h;
+   margin: 32px auto;
+   display: flex;
+   position: relative;
+   align-items:flex-start;
+   background: #00d9ff;
+}
+
+.taktech-conteudo-container{
+   width: $container-w;
+   height: 752px;
+   margin-top: 152px;
+   display: flex;
+   justify-content: space-around;
+   background: #2500aa;
+}
+
+.talktech-text-right{
+   width: 640px;
+   height: 600px; 
+   margin-top: 98px;
+   background: red;
+}
+
+h1.talktech-title{
+   font-size: 60px;
+}
+
+ul.talktech-lista{
+   list-style-type: none;
+   display: flex;
+   flex-direction: column;
+   margin: 0 0;
+   color: rgb(255, 255, 255);
+   font-size: 24px;
+   text-align: left;
+   font-family: Source Sans Pro;
+   font-weight: 250;
+   line-height: normal;
+   font-stretch: normal;
+   text-decoration: none;
+   margin-top: 100px;
+}
+
+.talktech-text-right p{
+   margin-top: 50px;
+}
+
+.talktech-lista li{
+   padding-left: 5px;
+}
+
+.talktech-computer-icons{
+   width: 710px;
+   height: 600px; 
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   margin-top: 98px;
+   background: gray;
+}
+
+/***************************Equipe Cosmos*************************************/
+
+section.equipe-cosmos-container-home{
+   max-width: $container-w;
+   height: $container-h;
+   margin: 32px auto;
+   padding-top: 78px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  
+   
+   background: brown;
+}
+
+div.equipe-cosmos-cards{
+   width: $container-w;
+   height: 600px;
+   margin-top: 58px;
+   background: rgb(225, 0, 255);
+}
+
+/***************************Formulário*************************************/
+
+section.formulario-container-home{
+   max-width: $container-w;
+   height: $container-h;
+   padding-top: 100px;
+   margin: 0 auto 32px;
+
+   background: #00d9ff;
+}
+
+.formulario-container-conteudo{
+   max-width: $container-w;
+   height: 900px;
+   padding-top: 38px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+
+   background: yellow;
+}
+
+div.formulario-text-left{
+  width: 580px;
+  height: 370px; 
+   padding-top: 60px;
+  background: #7700ff;
+}
+
+h1.formulario-titlte-text-left{
+   margin-top: 40px;
+}
+
+.formulario-purple-line-text-left{
+   width: 185px;
+   position: absolute;
+   border: 8px solid #701F88;
+}
+
+div.formulario-container{
+   width: 660px;
+   height: 840px; 
+   padding-top: 5px;
+   display: flex;
+   justify-content: center;
+   
+  
+ 
+   background: #003cff;
+ }
+
+div.formulario{
+   box-sizing: border-box;
+   padding: 45px 40px 40px;
+   width: 620px;
+   height: 820px;
+
+   background: rgba(28, 28, 28, 0.15);
+   border: 7px solid #701F88;
+   backdrop-filter: blur(10px);
+   /* Note: backdrop-filter has minimal browser support */ /******Não apaga esse comentário*/
+
+   border-radius: 50px;
+}
+
+
+
+/***************************Footer*************************************/
+
+footer{
+   max-width: $container-w;
+   height: 400px;
+   margin: 0 auto 32px;
+
+   background: blueviolet;
+}
+
+.-grid-1{
+   width: 1000px;
+}
+
+
