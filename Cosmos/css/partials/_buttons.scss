@@ -34,3 +34,60 @@ a{
         opacity: 0.9;
     }
 }
+
+.link{
+    display: inline-block;
+    color: $purple-normal;
+    background-image: url(../../svg/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    font-size: 18px;
+
+    padding: 16px 16px 16px 40px;
+
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        display: block;
+
+        top: 75%;
+        left: 56px;
+
+        width: 0%;
+        height: 2px;
+        border-radius: 2px;
+        transition: .5s ease;
+
+        background-color: $purple-light;
+    }
+
+    &:hover{
+
+        opacity: 0.8;
+        padding-left: 64px;
+        background-position: 8px 50%;
+        
+        &::after{
+    
+            width: 100%;
+            background-color: $purple-light;
+        }
+    }
+}
+
+.btn-form{
+    width: 260.06px;
+    height: 49.63px;
+    transition: 0.09s;
+    
+    color: white;
+    background: #701F88;
+    border-radius: 17px;
+}
+
+.btn-form:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}

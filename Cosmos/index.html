@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&family=Source+Sans+Pro:wght@200&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Cosmos</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/svg-inject.min.js"></script>
 </head>
+
 <body>
 
     <!---========= HEADER =========-->
@@ -56,29 +59,64 @@
     </header>
 
     <!---========= HERO =========-->
-    <main class="container border hero py-5">
-        <div class="flex-item-2 py-3 border">
+    <main class="container hero py-5">
+        <div class="flex-item-2 py-3">
             <h2>Bem Vindo ao Cosmos!</h2>
             <p class="my-2">Onde sempres damos um universo de possibilidades.</p>
         </div>
-        <div class="flex-item-1 border">
+        <div class="flex-item-1">
             <div class="logo">
                 <img src="img/logo.png" alt="">
             </div>
         </div>
     </main>
-    <!---========= TalkTech =========-->
-    <section class="container border hero py-5 mt-2">
-        <div class="flex-item-1 py-3 border">
-            <img src="img/computer-icons.svg" alt="" width="500px" height="550px">
+
+    <!---========= SECTION PEOPLE =========-->
+    <section class="container">
+        <div class="flex-item-4 flex-column">
+            <h2>Quem Somos</h2>
+            <br>
+            <p>
+                Nós somos a Cosmos, uma empresa de tecnologia. Especialistas em desenvolvimento de softwares,
+                trazemos inovação e facilidade para seu ambiente de trabalho e estudo.
+            </p>
+
+            <ul class="list mt-3">
+                <li class="list-item bg-icon-check">
+                    <p>Sempre procurando inovação.</p>
+                </li>
+                <li class="list-item bg-icon-check">
+                    <p>Trazendo soluções para o dia a dia.</p>
+                </li>
+                <li class="list-item bg-icon-check">
+                    <p>Sempre pensando em trazer o melhor para você.</p>
+                </li>
+                <li class="list-item bg-icon-check">
+                    <p>Com a melhor acessibilidade para você.</p>
+                </li>
+            </ul>
         </div>
-        <div class="flex-item-1 border flex-column">
+        <div class="flex-item-3 mx-2">
+            <img src="svg/svg-people1.svg" alt="" onload="SVGInject(this)">
+        </div>
+        <div class="flex-item-1 flex-column mx-2 my-3">
+            <img src="svg/svg-people2.svg" class="mx-2 my-2" id="people2" alt="" onload="SVGInject(this)">
+            <img src="svg/svg-people3.svg" class="mx-2 my-2" alt="" onload="SVGInject(this)">
+        </div>
+    </section>
+
+    <!---========= TalkTech =========-->
+    <section class="container hero py-5 mt-2">
+        <div class="flex-item-1 py-3">
+            <img src="svg/computer-icons.svg" alt="" width="500px" height="550px">
+        </div>
+        <div class="flex-item-1 flex-column pl-1">
             <h1>Talktech</h1>
             <p class="mt-2">Nosso projeto visa procurar textos ou inventar algum tipo de paragrafo para preencher
                 essa tag p para poder ver o melhor texto que se encaixa nesse elemento e assim não usar
                 o lorem ipsum, que é um poema em latim com as letras embaralhadas.
             </p>
-            <ul class="list mt-6">
+            <ul class="list mt-2">
                 <li class="list-item bg-icon-check"><a>Sempre procurando inovações.</a></li>
                 <li class="list-item bg-icon-people"><a>Trazendo soluções para o dia a dia.</a></li>
                 <li class="list-item bg-icon-chat"><a>Focado em destruir o mundo.</a></li>
@@ -87,11 +125,312 @@
         </div>
     </section>
 
-    <div style="height: 2000px;"></div>
+    <!---========= EQUIPE COSMOS =========-->
+    <section class="box mt-2">
+        <h2>Equipe Cosmos</h2>
+    </section>
+    <section class="container-swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!--============ CARD DESENVOLVEDORES ===========-->
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
+                        <div class="contentTx">
+                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
+                        </div>    
+                    </div>
+                    <ul class="sci">
+                        <li class="icon bg-icon-inst" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                        <li class="icon bg-icon-git" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
+                        <div class="contentTx">
+                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
+                        </div>    
+                    </div>
+                    <ul class="sci">
+                        <li class="icon bg-icon-inst" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                        <li class="icon bg-icon-git" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
+                        <div class="contentTx">
+                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
+                        </div>    
+                    </div>
+                    <ul class="sci">
+                        <li class="icon bg-icon-inst" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                        <li class="icon bg-icon-git" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
+                        <div class="contentTx">
+                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
+                        </div>    
+                    </div>
+                    <ul class="sci">
+                        <li class="icon bg-icon-inst" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                        <li class="icon bg-icon-git" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
+                        <div class="contentTx">
+                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
+                        </div>    
+                    </div>
+                    <ul class="sci">
+                        <li class="icon bg-icon-inst" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                        <li class="icon bg-icon-git" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
+                        <div class="contentTx">
+                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
+                        </div>    
+                    </div>
+                    <ul class="sci">
+                        <li class="icon bg-icon-inst" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                        <li class="icon bg-icon-git" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
+                        <div class="contentTx">
+                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
+                        </div>    
+                    </div>
+                    <ul class="sci">
+                        <li class="icon bg-icon-inst" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                        <li class="icon bg-icon-git" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
+                        <div class="contentTx">
+                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
+                        </div>    
+                    </div>
+                    <ul class="sci">
+                        <li class="icon bg-icon-inst" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                        <li class="icon bg-icon-git" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
+                        <div class="contentTx">
+                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
+                        </div>    
+                    </div>
+                    <ul class="sci">
+                        <li class="icon bg-icon-inst" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                        <li class="icon bg-icon-git" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
+                        <div class="contentTx">
+                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
+                        </div>    
+                    </div>
+                    <ul class="sci">
+                        <li class="icon bg-icon-inst" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                        <li class="icon bg-icon-git" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content">
+                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
+                        <div class="contentTx">
+                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
+                        </div>    
+                    </div>
+                    <ul class="sci">
+                        <li class="icon bg-icon-inst" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                        <li class="icon bg-icon-git" >
+                            <a href=""><h4>F</h4></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="button-next"></div>
+        <div class="button-prev"></div>
+    </section>
+
+    <!---========= Formulário =========-->
+    <section class="container pb-4 mt-2 flex-start-top">
+        <div class="flex-item-1 ml-2 mr-5 py-3">
+            <h1>Formulário</h1>
+            <p>
+                Preencha o formulário para enviar um email para a Cosmos, 
+                entre em contato conosco caso tenha algum proplema ou para outros fins. Agradecemos sua preferecia e contato!
+            </p>
+            <h2 class="mt-3 ml-1" style="font-size: medium;">Suporte</h2>
+            <div class="flex-start">
+                <ul class="list mt-2 flex-start">
+                    <li class="list-item bg-icon-email"><a>support@cosmos.com</a></li>
+                    <li class="list-item bg-icon-phone"><a>(55) 11 21382-3453</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--
+            <form class="flex-item-1  flex-start px-2">
+            <div class="form-design  flex-column py-2 px-3">
+                <div class="flex-item-1 mt-2">
+                    <p>Nome Completo</p>
+                    <input class="input-form px-5 py-1" type="text">
+                </div>
+                <div class="flex-item-1">
+                    <p class="mt-3">Email</p>
+                    <input class="input-form px-5 py-1" type="text">
+                </div>
+                <div class="flex-item-1">
+                    <p class="mt-3">Telefone</p>
+                    <input class="input-form px-5 py-1" type="text">
+                </div>
+                <div class="flex-item-1">
+                    <p class="mt-3">Mensagem</p>
+                    <input class="input-m px-5 py-4" type="text">
+                </div>
+                <div class="flex-item-1">
+                    <button class="btn-form mt-3">Enviar</button>
+                </div>
+            </div>
+        </form>
+        -->
+        <form class="formulario flex-item-1" method="POST" action="./controller/usuarioController.php" autocomplete="off">
+
+            <div class="titulo">
+              <h5>Fale Conosco</h5>
+            </div>
+    
+            <div class="textfild">
+              <h2 class="mb-1" style="font-size: medium;">Nome:</h2>
+              <input class="input" id="nome" name="nome" type="text" placeholder="Nome Completo" required>
+            </div>
+            
+            <div class="textfild">
+            <h2 class="mb-1" style="font-size: medium;">Email:</h2>
+              <input class="input" id="email" name="email" type="email" placeholder="Email" required>
+            </div>
+    
+            <div class="textfild">
+            <h2 class="mb-1" style="font-size: medium;">Telefone:</h2>
+              <input class="input" id="telefone" name="telefone" type="number" placeholder="Telefone" required>
+            </div>
+            
+            <div class="textfild">
+                <h2 class="mb-1" style="font-size: medium;">Mensagem:</h2>
+                <textarea class="input" name="mensagem" id="" placeholder="Digite sua mensagem" cols="30" rows="10"></textarea>
+            </div>
+    
+            <button class="btn-enviar" type="submit">Enviar</button>
+    
+        </form>
+
+    </div>
+    </section>
+
+    <!---========= Footer =========-->
+    <footer class="mt-3">
+        <section class="container py-3 ">
+            <div class="footer-flex-1">
+                <img src="img/logo.png" style="max-width: 120px;" class="mx-1" loading="lazy"
+                    onload="SVGInject(this)" />
+                <p>
+                    Cosmos Inc. UK 18.43/Não é a idade do meu pai :(
+                    Giuseppe Cadura, 39 - São Paulo, SP - 05409-000
+                </p>
+            </div>
+            <div class="footer-flex-2">
+                <img src="svg/icon-email.svg" class="mx-1" loading="lazy" onload="SVGInject(this)" />
+                <a>support@cosmos.com</a>
+                <img src="svg/icon-phone.svg" class="mx-1" loading="lazy" onload="SVGInject(this)" />
+                <a>(55) 11 21382-3453</a>
+            </div>
+        </section>
+    </footer>
 
 
     <!---========= JS =========-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 40,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                type: 'progressbar',
+            },
+            navigation: {
+                nextEl: '.button-next',
+                prevEl: '.button-prev',
+            },
+        });
+
+    </script>
 
 </body>
+
 </html>

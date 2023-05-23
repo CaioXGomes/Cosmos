@@ -58,6 +58,12 @@ $container-s: 540px;
     align-items: center;
 }
 
+.flex-start-top{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 .flex-center{
     display: flex;
     justify-content: center;
@@ -132,27 +138,115 @@ $container-s: 540px;
     }
 }
 
-.list {
-  margin-top: 36px;
+.list-item{
+    display: flex;
+    list-style: none;
+    position: relative;
+    padding: 8px 8px 8px 54px;
+    margin-bottom: 48px;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -8px;
+        border: none;
+
+        display: block;
+
+        width: 30px;
+        height: 30px;
+    }
 }
 
-.list-item {
-  list-style: none;
-  position: relative;
-
-  padding: 8px 8px 8px 72px;
-  margin-bottom: 48px;
-
-  @include responsive(s) {
-    margin-bottom: 32px;
-  }
-
-  &::after {
-    position: absolute;
-    top: 0;
-    left: -8px;
-    content: "";
-    width: 64px;
-    height: 64px;
-  }
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: transparent;
+    border: 5px solid $black-fundo;
 }
+
+::-webkit-scrollbar-thumb{
+    background-color: $purple-normal;
+    border-radius: 50px;
+    border: 2px solid $purple-normal;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 4px solid $purple-normal;
+    margin: 0 auto;
+    box-shadow: $sombra-card;
+
+    @include responsive(s){
+        width: 70%;
+    }
+
+    @include responsive(xs){
+        width: 90%;
+    }
+
+}
+
+.textfild{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.titulo{
+    margin: 0 auto;
+}
+
+.input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: $cor-boxtext;
+    color: $cor-label;
+    font-size: 12pt;
+    box-shadow: $sombra-boxtext;
+    outline: none;
+    margin-bottom: 13px;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    &::placeholder{
+        color: #f0ffff96;
+    }
+
+}
+
+label{
+    color: $cor-label;
+    margin-bottom: 10px;
+}
+
+.btn-enviar{
+    width: 100%;
+    background-color: $purple;
+    color: $cor-label;
+    padding: 16px 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    margin-top: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .4s ease; 
+    
+    &:hover{
+        box-shadow: $sombra-purple;
+    }
+}
+
