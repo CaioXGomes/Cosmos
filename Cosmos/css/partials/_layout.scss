@@ -130,14 +130,6 @@ $container-s: 540px;
     overflow: hidden;
 }
 
-.hero{
-    height: 90vh;
-
-    @include responsive(s){
-        height: auto;
-    }
-}
-
 .list-item{
     display: flex;
     list-style: none;
@@ -172,6 +164,7 @@ $container-s: 540px;
 }
 
 .formulario{
+    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     padding: 25px;
@@ -250,3 +243,64 @@ label{
     }
 }
 
+.btn-enviar-2{
+    width: 190px;
+    background-color: $purple;
+    color: $cor-label;
+    padding: 16px 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    margin-top: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .4s ease; 
+    
+    &:hover{
+        box-shadow: $sombra-purple;
+    }
+}
+
+.star{
+    width: 10px;
+    height: 10px;
+    background: white;
+}
+
+.hero{
+    height: 90vh;
+
+    @include responsive(s){
+        height: auto;
+    }
+}
+
+.bg-home{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    position: absolute;
+    z-index: -1;
+}
+
+.svg-bg-home{
+    width: 150%;
+
+    @include responsive(xl){
+        width: 100%;
+    }
+
+    @include responsive(l){
+        width: 100%;
+    }
+}
+
+.svg-invite{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+}

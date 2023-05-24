@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&family=Source+Sans+Pro:wght@200&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
     <title>Cosmos</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/svg-inject.min.js"></script>
@@ -37,20 +38,20 @@
                 </div>
             </div>
             <div class="navbar-desktop-item-2">
-                <a href="" class="nav-link-desktop">Inicio</a>
-                <a href="" class="nav-link-desktop">Quem Somos</a>
-                <a href="" class="nav-link-desktop">Projetos</a>
-                <a href="" class="nav-link-desktop">Equipe</a>
-                <a href="" class="nav-link-desktop">Fale Conosco</a>
+                <a href="#Inicio" class="nav-link-desktop">Inicio</a>
+                <a href="#Quem-somos" class="nav-link-desktop">Quem Somos</a>
+                <a href="#Projetos" class="nav-link-desktop">Projetos</a>
+                <a href="#Equipe" class="nav-link-desktop">Equipe</a>
+                <a href="#Fale-conosco" class="nav-link-desktop">Fale Conosco</a>
             </div>
         </nav>
 
-        <!---========= MENU MOBILE =========-->
+        <!---========= MENU MOBILE =========--> 
         <nav class="menu-mobile" id="menu-mobile">
             <div class="nav-list-mobile">
                 <a href="" class="nav-link-mobile mb-1">Inicio</a>
                 <a href="" class="nav-link-mobile mb-1">Quem Somos</a>
-                <a href="" class="nav-link-mobile mb-1">Projetos</a>
+                <a href="" class="nav-link-mobile mb-1">Projetog</a>
                 <a href="" class="nav-link-mobile mb-1">Equipe</a>
                 <a href="" class="nav-link-mobile mb-1">Fale Conosco</a>
             </div>
@@ -59,12 +60,19 @@
     </header>
 
     <!---========= HERO =========-->
-    <main class="container hero py-5">
-        <div class="flex-item-2 py-3">
+    <div class="bg-home">
+        <img src="svg/bg-home.svg" class="svg-bg-home" alt="" onload="SVGInject(this)">
+    </div>
+    <main class="container hero py-5" id="Inicio">
+        <div class="flex-item-2 mt-3 py-3">
             <h2>Bem Vindo ao Cosmos!</h2>
-            <p class="my-2">Onde sempres damos um universo de possibilidades.</p>
+            <h5 class="my-2">Onde sempres damos um universo de possibilidades.</h5>
+            <p>Quer conhecer mais sobre os nós? Arrasta pra baixo! Que á gente te conta<p> 
+                 um poquinho sobre a empresa.</p>
+            </p>
+            <button class="btn mt-2" type="submit">Conhecer</button>
         </div>
-        <div class="flex-item-1">
+        <div class="flex-item-1 mt-3">
             <div class="logo">
                 <img src="img/logo.png" alt="">
             </div>
@@ -72,7 +80,7 @@
     </main>
 
     <!---========= SECTION PEOPLE =========-->
-    <section class="container">
+    <section class="container" id="Quem-somos">
         <div class="flex-item-4 flex-column">
             <h2>Quem Somos</h2>
             <br>
@@ -106,288 +114,284 @@
     </section>
 
     <!---========= TalkTech =========-->
-    <section class="container hero py-5 mt-2">
-        <div class="flex-item-1 py-3">
-            <img src="svg/computer-icons.svg" alt="" width="500px" height="550px">
-        </div>
-        <div class="flex-item-1 flex-column pl-1">
-            <h1>Talktech</h1>
-            <p class="mt-2">Nosso projeto visa procurar textos ou inventar algum tipo de paragrafo para preencher
-                essa tag p para poder ver o melhor texto que se encaixa nesse elemento e assim não usar
-                o lorem ipsum, que é um poema em latim com as letras embaralhadas.
-            </p>
-            <ul class="list mt-2">
-                <li class="list-item bg-icon-check"><a>Sempre procurando inovações.</a></li>
-                <li class="list-item bg-icon-people"><a>Trazendo soluções para o dia a dia.</a></li>
-                <li class="list-item bg-icon-chat"><a>Focado em destruir o mundo.</a></li>
-                <li class="list-item bg-icon-amount-cards"><a>Com muita lavagem de dinheiro.</a></li>
-            </ul>
-        </div>
-    </section>
+    <div class="relative">
 
-    <!---========= EQUIPE COSMOS =========-->
-    <section class="box mt-2">
-        <h2>Equipe Cosmos</h2>
-    </section>
-    <section class="container-swiper">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <!--============ CARD DESENVOLVEDORES ===========-->
-                <div class="swiper-slide">
-                    <div class="content">
-                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
-                        <div class="contentTx">
-                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
-                        </div>    
-                    </div>
-                    <ul class="sci">
-                        <li class="icon bg-icon-inst" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                        <li class="icon bg-icon-git" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="swiper-slide">
-                    <div class="content">
-                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
-                        <div class="contentTx">
-                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
-                        </div>    
-                    </div>
-                    <ul class="sci">
-                        <li class="icon bg-icon-inst" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                        <li class="icon bg-icon-git" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="swiper-slide">
-                    <div class="content">
-                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
-                        <div class="contentTx">
-                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
-                        </div>    
-                    </div>
-                    <ul class="sci">
-                        <li class="icon bg-icon-inst" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                        <li class="icon bg-icon-git" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="swiper-slide">
-                    <div class="content">
-                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
-                        <div class="contentTx">
-                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
-                        </div>    
-                    </div>
-                    <ul class="sci">
-                        <li class="icon bg-icon-inst" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                        <li class="icon bg-icon-git" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="swiper-slide">
-                    <div class="content">
-                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
-                        <div class="contentTx">
-                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
-                        </div>    
-                    </div>
-                    <ul class="sci">
-                        <li class="icon bg-icon-inst" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                        <li class="icon bg-icon-git" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="swiper-slide">
-                    <div class="content">
-                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
-                        <div class="contentTx">
-                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
-                        </div>    
-                    </div>
-                    <ul class="sci">
-                        <li class="icon bg-icon-inst" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                        <li class="icon bg-icon-git" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="swiper-slide">
-                    <div class="content">
-                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
-                        <div class="contentTx">
-                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
-                        </div>    
-                    </div>
-                    <ul class="sci">
-                        <li class="icon bg-icon-inst" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                        <li class="icon bg-icon-git" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="swiper-slide">
-                    <div class="content">
-                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
-                        <div class="contentTx">
-                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
-                        </div>    
-                    </div>
-                    <ul class="sci">
-                        <li class="icon bg-icon-inst" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                        <li class="icon bg-icon-git" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="swiper-slide">
-                    <div class="content">
-                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
-                        <div class="contentTx">
-                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
-                        </div>    
-                    </div>
-                    <ul class="sci">
-                        <li class="icon bg-icon-inst" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                        <li class="icon bg-icon-git" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="swiper-slide">
-                    <div class="content">
-                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
-                        <div class="contentTx">
-                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
-                        </div>    
-                    </div>
-                    <ul class="sci">
-                        <li class="icon bg-icon-inst" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                        <li class="icon bg-icon-git" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="swiper-slide">
-                    <div class="content">
-                        <div class="imgBx mb-2"><img class="img-Devs" src="img/eduardo.jpeg" alt=""></div>
-                        <div class="contentTx">
-                            <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
-                        </div>    
-                    </div>
-                    <ul class="sci">
-                        <li class="icon bg-icon-inst" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                        <li class="icon bg-icon-git" >
-                            <a href=""><h4>F</h4></a>
-                        </li>
-                    </ul>
+        <img src="svg/fignu7.svg" class="w-auto svg-invite" alt="" onload="SVGInject(this)">
+
+        <section class="container hero py-5 mt-2 mb-3" id="Projetos">
+            <div class="flex-item-1 mx-2 py-3">
+                <div class="logo-projeto">
+                    <img src="img/TalkTechLogo01.png" alt="">
                 </div>
             </div>
-        </div>
-        <div class="button-next"></div>
-        <div class="button-prev"></div>
-    </section>
-
-    <!---========= Formulário =========-->
-    <section class="container pb-4 mt-2 flex-start-top">
-        <div class="flex-item-1 ml-2 mr-5 py-3">
-            <h1>Formulário</h1>
-            <p>
-                Preencha o formulário para enviar um email para a Cosmos, 
-                entre em contato conosco caso tenha algum proplema ou para outros fins. Agradecemos sua preferecia e contato!
-            </p>
-            <h2 class="mt-3 ml-1" style="font-size: medium;">Suporte</h2>
-            <div class="flex-start">
-                <ul class="list mt-2 flex-start">
-                    <li class="list-item bg-icon-email"><a>support@cosmos.com</a></li>
-                    <li class="list-item bg-icon-phone"><a>(55) 11 21382-3453</a></li>
+            <div class="flex-item-2 flex-column">
+                <h1>Talktech</h1>
+                <p class="mt-2">Nosso aplicatico TalkTech tem como foco trazer informações e chats de corversa para esse nosso mundo de programação,
+                    onde você pode fazer amigos e compartilhar seus códigos, como fosse seu portifolio. Nesse nosso projeto tambem vamos
+                    ficar atualizando com as noticias que acontece na area de programação.
+                </p>
+                <ul class="list mt-3">
+                    <li class="list-item bg-icon-check"><a>Chats de Conversa para todos os Programadores.</a></li>
+                    <li class="list-item bg-icon-people"><a>Faça amigo e poste seus códigos.</a></li>
+                    <li class="list-item bg-icon-chat"><a>Rede social focada em programadores.</a></li>
+                    <li class="list-item bg-icon-amount-cards"><a>Poste e veja projetos de outras pessoas.</a></li>
                 </ul>
             </div>
-        </div>
-        <!--
-            <form class="flex-item-1  flex-start px-2">
-            <div class="form-design  flex-column py-2 px-3">
-                <div class="flex-item-1 mt-2">
-                    <p>Nome Completo</p>
-                    <input class="input-form px-5 py-1" type="text">
-                </div>
-                <div class="flex-item-1">
-                    <p class="mt-3">Email</p>
-                    <input class="input-form px-5 py-1" type="text">
-                </div>
-                <div class="flex-item-1">
-                    <p class="mt-3">Telefone</p>
-                    <input class="input-form px-5 py-1" type="text">
-                </div>
-                <div class="flex-item-1">
-                    <p class="mt-3">Mensagem</p>
-                    <input class="input-m px-5 py-4" type="text">
-                </div>
-                <div class="flex-item-1">
-                    <button class="btn-form mt-3">Enviar</button>
-                </div>
-            </div>
-        </form>
-        -->
-        <form class="formulario flex-item-1" method="POST" action="./controller/usuarioController.php" autocomplete="off">
-
-            <div class="titulo">
-              <h5>Fale Conosco</h5>
-            </div>
-    
-            <div class="textfild">
-              <h2 class="mb-1" style="font-size: medium;">Nome:</h2>
-              <input class="input" id="nome" name="nome" type="text" placeholder="Nome Completo" required>
-            </div>
-            
-            <div class="textfild">
-            <h2 class="mb-1" style="font-size: medium;">Email:</h2>
-              <input class="input" id="email" name="email" type="email" placeholder="Email" required>
-            </div>
-    
-            <div class="textfild">
-            <h2 class="mb-1" style="font-size: medium;">Telefone:</h2>
-              <input class="input" id="telefone" name="telefone" type="number" placeholder="Telefone" required>
-            </div>
-            
-            <div class="textfild">
-                <h2 class="mb-1" style="font-size: medium;">Mensagem:</h2>
-                <textarea class="input" name="mensagem" id="" placeholder="Digite sua mensagem" cols="30" rows="10"></textarea>
-            </div>
-    
-            <button class="btn-enviar" type="submit">Enviar</button>
-    
-        </form>
-
+        </section>
     </div>
-    </section>
+
+    <!---========= EQUIPE COSMOS =========-->
+
+    <div class="relative">
+
+        <img src="svg/fignu6.svg" class="w-auto svg-invite" alt="" onload="SVGInject(this)">
+
+        <section class="container-swiper py-5" id="Equipe">
+            <div class="swiper-container">
+                <div class="flex-center mb-4">
+                    <h1 class="mb-3">Equipe Cosmos</h1>
+                </div>
+                <div class="flex-end">
+                    <div class="button-next"></div>
+                <div class="button-prev"></div>
+                </div>
+                
+                <div class="swiper-wrapper">
+                    <!--============ CARD DESENVOLVEDORES ===========-->
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="imgBx mb-2"><img class="img-Devs" src="img/caio.jpeg" alt=""></div>
+                            <div class="contentTx">
+                                <h4 class="txt-devs">Caio Pinéo Gomes <br> <span class="devs-func"> Front-End </span></h4>
+                            </div>    
+                        </div>
+                        <ul class="sci">
+                            <li class="icon bg-icon-inst" >
+                                <a href=""><img src="svg/icon-insta.svg" alt="" width="24px" height="24px"></a>
+                            </li>
+                            <li class="icon bg-icon-git" >
+                                <a href=""><img src="svg/icon-github.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="imgBx mb-2"><img class="img-Devs" src="img/dudu.jpeg" alt=""></div>
+                            <div class="contentTx">
+                                <h4 class="txt-devs">Eduardo Alves Azevedo <br> <span class="devs-func"> Front-End </span></h4>
+                            </div>    
+                        </div>
+                        <ul class="sci">
+                            <li class="icon bg-icon-inst" >
+                                <a href=""><img src="svg/icon-insta.svg" alt="" width="24px" height="24px"></a>
+                            </li>
+                            <li class="icon bg-icon-git" >
+                                <a href=""><img src="svg/icon-github.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="imgBx mb-2"><img class="img-Devs" src="img/goes.jpeg" alt=""></div>
+                            <div class="contentTx">
+                                <h4 class="txt-devs">Gabriel Goes de Souza Galdino<br> <span class="devs-func"> Back-end </span></h4>
+                            </div>    
+                        </div>
+                        <ul class="sci">
+                            <li class="icon bg-icon-inst" >
+                                <a href=""><img src="svg/icon-insta.svg" alt="" width="24px" height="24px"></a>
+                            </li>
+                            <li class="icon bg-icon-git" >
+                                <a href=""><img src="svg/icon-github.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="imgBx mb-2"><img class="img-Devs" src="img/isis.jpeg" alt=""></div>
+                            <div class="contentTx">
+                                <h4 class="txt-devs">Isis Nina Alves Carvalho<br> <span class="devs-func"> Analista </span></h4>
+                            </div>    
+                        </div>
+                        <ul class="sci">
+                            <li class="icon bg-icon-inst" >
+                                <a href=""><img src="svg/icon-insta.svg" alt="" width="24px" height="24px"></a>
+                            </li>
+                            <li class="icon bg-icon-git" >
+                                <a href=""><img src="svg/icon-github.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="imgBx mb-2"><img class="img-Devs" src="img/kennedy.jpeg" alt=""></div>
+                            <div class="contentTx">
+                                <h4 class="txt-devs">Kennedy Gomes Nunes<br> <span class="devs-func"> Designer </span></h4>
+                            </div>    
+                        </div>
+                        <ul class="sci">
+                            <li class="icon bg-icon-inst" >
+                                <a href=""><img src="svg/icon-insta.svg" alt="" width="24px" height="24px"></a>
+                            </li>
+                            <li class="icon bg-icon-git" >
+                                <a href=""><img src="svg/icon-github.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="imgBx mb-2"><img class="img-Devs" src="img/leo.jpeg" alt=""></div>
+                            <div class="contentTx">
+                                <h4 class="txt-devs">Leonardo Pereira da Silva <br> <span class="devs-func"> Back-End </span></h4>
+                            </div>    
+                        </div>
+                        <ul class="sci">
+                            <li class="icon bg-icon-inst" >
+                                <a href=""><img src="svg/icon-insta.svg" alt="" width="24px" height="24px"></a>
+                            </li>
+                            <li class="icon bg-icon-git" >
+                                <a href=""><img src="svg/icon-github.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="imgBx mb-2"><img class="img-Devs" src="img/lucas.jpeg" alt=""></div>
+                            <div class="contentTx">
+                                <h4 class="txt-devs">Lucas Ferreira Chagas <br> <span class="devs-func"> Designer </span></h4>
+                            </div>    
+                        </div>
+                        <ul class="sci">
+                            <li class="icon bg-icon-inst" >
+                                <a href=""><img src="svg/icon-insta.svg" alt="" width="24px" height="24px"></a>
+                            </li>
+                            <li class="icon bg-icon-git" >
+                                <a href=""><img src="svg/icon-github.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="imgBx mb-2"><img class="img-Devs" src="img/magno.jpeg" alt=""></div>
+                            <div class="contentTx">
+                                <h4 class="txt-devs">Magno Augustus Souza<br> <span class="devs-func"> Front-End </span></h4>
+                            </div>    
+                        </div>
+                        <ul class="sci">
+                            <li class="icon bg-icon-inst" >
+                                <a href=""><img src="svg/icon-insta.svg" alt="" width="24px" height="24px"></a>
+                            </li>
+                            <li class="icon bg-icon-git" >
+                                <a href=""><img src="svg/icon-github.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="imgBx mb-2"><img class="img-Devs" src="img/victor.jpeg" alt=""></div>
+                            <div class="contentTx">
+                                <h4 class="txt-devs">Victor Augusto Mendoça Aguiar <br> <span class="devs-func"> Designer </span></h4>
+                            </div>    
+                        </div>
+                        <ul class="sci">
+                            <li class="icon bg-icon-inst" >
+                                <a href=""><img src="svg/icon-insta.svg" alt="" width="24px" height="24px"></a>
+                            </li>
+                            <li class="icon bg-icon-git" >
+                                <a href=""><img src="svg/icon-github.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="imgBx mb-2"><img class="img-Devs" src="img/vinir.jpeg" alt=""></div>
+                            <div class="contentTx">
+                                <h4 class="txt-devs">Vinicius Ruiz Ramos <br> <span class="devs-func"> Back-End </span></h4>
+                            </div>    
+                        </div>
+                        <ul class="sci">
+                            <li class="icon bg-icon-inst" >
+                                <a href=""><img src="svg/icon-insta.svg" alt="" width="24px" height="24px"></a>
+                            </li>
+                            <li class="icon bg-icon-git" >
+                                <a href=""><img src="svg/icon-github.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <div class="imgBx mb-2"><img class="img-Devs" src="img/yolanda.jpeg" alt=""></div>
+                            <div class="contentTx">
+                                <h4 class="txt-devs">Yolanda Silva Santos <br> <span class="devs-func"> Designer </span></h4>
+                            </div>    
+                        </div>
+                        <ul class="sci">
+                            <li class="icon bg-icon-inst" >
+                                <a href=""><img src="svg/icon-insta.svg" alt="" width="24px" height="24px"></a>
+                            </li>
+                            <li class="icon bg-icon-git" >
+                                <a href=""><img src="svg/icon-github.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+
+    <!---========= Formulário =========-->
+    <div class="relative">
+        <img src="svg/fignu5.svg" class="w-auto svg-invite" alt="" onload="SVGInject(this)">
+    
+        <section class="container pb-4 mt-4 flex-start-top pt-5" id="Fale-conosco">
+            <div class="flex-item-1 ml-2 mr-5 py-3">
+                <h1>Formulário</h1>
+                <p>
+                    Preencha o formulário para enviar um email para a Cosmos, 
+                    entre em contato conosco caso tenha algum proplema ou para outros fins. Agradecemos sua preferecia e contato!
+                </p>
+                <h2 class="mt-3 ml-1" style="font-size: medium;">Suporte</h2>
+                <div class="flex-start">
+                    <ul class="list mt-2 flex-start">
+                        <li class="list-item bg-icon-email"><a>support@cosmos.com</a></li>
+                        <li class="list-item bg-icon-phone"><a>(55) 11 21382-3453</a></li>
+                    </ul>
+                </div>
+            </div>
+            <form class="formulario flex-item-1" method="POST" action="./controller/usuarioController.php" autocomplete="off">
+
+                <div class="titulo">
+                <h5>Fale Conosco</h5>
+                </div>
+        
+                <div class="textfild">
+                <h2 class="mb-1" style="font-size: medium;">Nome:</h2>
+                <input class="input" id="nome" name="nome" type="text" placeholder="Nome Completo" required>
+                </div>
+                
+                <div class="textfild">
+                <h2 class="mb-1" style="font-size: medium;">Email:</h2>
+                <input class="input" id="email" name="email" type="email" placeholder="Email" required>
+                </div>
+        
+                <div class="textfild">
+                <h2 class="mb-1" style="font-size: medium;">Telefone:</h2>
+                <input class="input" id="telefone" name="telefone" type="number" placeholder="Telefone" required>
+                </div>
+                
+                <div class="textfild">
+                    <h2 class="mb-1" style="font-size: medium;">Mensagem:</h2>
+                    <textarea class="input" style="outline: none;" name="mensagem" id="" placeholder="Digite sua mensagem" cols="30" rows="10"></textarea>
+                </div>
+        
+                <button class="btn" type="submit">Enviar</button>
+        
+            </form>
+
+        </div>
+        </section>
+    </div>
 
     <!---========= Footer =========-->
     <footer class="mt-3">
@@ -396,7 +400,7 @@
                 <img src="img/logo.png" style="max-width: 120px;" class="mx-1" loading="lazy"
                     onload="SVGInject(this)" />
                 <p>
-                    Cosmos Inc. UK 18.43/Não é a idade do meu pai :(
+                    Cosmos Inc. UK 18.43
                     Giuseppe Cadura, 39 - São Paulo, SP - 05409-000
                 </p>
             </div>
