@@ -239,6 +239,13 @@ $height-card: 0.63 * $width-card;
   animation: people 10s ease 5s infinite;
 }
 
+#people2{
+  @include responsive(s){
+      display: none;
+      margin-right: 40px;
+  }
+}
+
 .people3 {
   opacity: 0;
   animation: people 10s ease 2s infinite;

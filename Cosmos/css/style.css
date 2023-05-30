@@ -120,7 +120,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
   background-color: transparent;
   border: 5px solid #131414;
 }
@@ -797,6 +797,12 @@ a:hover {
   padding-top: 128px;
   padding-bottom: 128px;
 }
+@media screen and (max-width: 960px) {
+  .py-5 {
+    padding-top: 128px;
+    padding-bottom: 16px;
+  }
+}
 
 html {
   scroll-behavior: smooth;
@@ -1042,7 +1048,6 @@ header {
   height: 370px;
   padding: 24px 36px;
   background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   border-radius: 50px;
   display: flex;
   flex-direction: column;
@@ -1093,15 +1098,13 @@ header {
 
 .logo-projeto {
   position: relative;
-  width: 500px;
-  height: 500px;
   border-radius: 20px;
   overflow: hidden;
 }
 @media screen and (max-width: 960px) {
   .logo-projeto {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
   }
 }
 
@@ -1469,6 +1472,13 @@ footer {
 .people2 {
   opacity: 0;
   animation: people 10s ease 5s infinite;
+}
+
+@media screen and (max-width: 960px) {
+  #people2 {
+    display: none;
+    margin-right: 40px;
+  }
 }
 
 .people3 {
