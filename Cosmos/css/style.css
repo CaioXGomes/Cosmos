@@ -188,6 +188,27 @@
   color: rgba(240, 255, 255, 0.5882352941);
 }
 
+textarea {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #333;
+  color: rgba(240, 255, 255, 0.8705882353);
+  resize: none;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.337254902);
+  outline: none;
+  margin-bottom: 13px;
+  font-size: 12pt;
+  font-family: "Source Sans Pro", sans-serif;
+}
+textarea::-moz-placeholder {
+  color: rgba(240, 255, 255, 0.5882352941);
+}
+textarea::placeholder {
+  color: rgba(240, 255, 255, 0.5882352941);
+}
+
 label {
   color: rgba(240, 255, 255, 0.8705882353);
   margin-bottom: 10px;
@@ -416,7 +437,7 @@ a:hover {
   font-size: 14px;
   line-height: 150%;
   color: #fefbff;
-  padding: 12px 32px;
+  padding: 12px 60px;
   transition: 0.3s ease;
   box-shadow: 0px 17px 17px rgba(204, 204, 204, 0.04), 0px 5.125px 5.125px rgba(204, 204, 204, 0.0260636), 0px 2.12866px 2.12866px rgba(204, 204, 204, 0.02), 0px 0.769896px 0.769896px rgba(204, 204, 204, 0.0139364);
 }
@@ -1036,7 +1057,7 @@ header {
   right: 32px;
   top: 22px;
   width: 36px;
-  height: 36px;
+  height: 204px;
   cursor: pointer;
   background-image: url("../../svg/icon-arrow.svg");
   background-repeat: no-repeat;
@@ -1048,7 +1069,7 @@ header {
   right: 88px;
   top: 24px;
   width: 36px;
-  height: 36px;
+  height: 204px;
   cursor: pointer;
   background-image: url("../../svg/icon-arrow.svg");
   background-repeat: no-repeat;

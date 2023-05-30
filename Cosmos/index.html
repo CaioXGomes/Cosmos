@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&family=Source+Sans+Pro:wght@200&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/logo.png">
     <title>Cosmos</title>
     <link rel="stylesheet" href="css/style.css">
@@ -30,7 +31,7 @@
         </nav>
 
         <!---========= NAV-BAR DESKTOP =========-->
-        <nav class="navbar-desktop">
+        <nav class="navbar-desktop" data-aos="fade-up">
             <div class="navbar-desktop-item-1">
                 <div class="logo-nav">
                     <h4>Cosmos</h4>
@@ -64,7 +65,7 @@
         <img src="svg/bg-home.svg" class="svg-bg-home" alt="" onload="SVGInject(this)">
     </div>
     <main class="container hero py-5" id="Inicio">
-        <div class="flex-item-2 mt-3 py-3">
+        <div class="flex-item-2 mt-3 py-3" data-aos="fade-up" data-aos-delay="50">
             <h2>Bem Vindo ao Cosmos!</h2>
             <h5 class="my-2">Onde sempres damos um universo de possibilidades.</h5>
             <p>Quer conhecer mais sobre os nós? Arrasta pra baixo! Que á gente te conta<p> 
@@ -72,7 +73,7 @@
             </p>
             <button class="btn mt-2" type="submit">Conhecer</button>
         </div>
-        <div class="flex-item-1 mt-3">
+        <div class="flex-item-1 mt-3" data-aos="fade-up" data-aos-delay="200" >
             <div class="logo">
                 <img src="img/logo.png" alt="">
             </div>
@@ -81,7 +82,7 @@
 
     <!---========= SECTION PEOPLE =========-->
     <section class="container" id="Quem-somos">
-        <div class="flex-item-4 flex-column">
+        <div class="flex-item-4 flex-column" data-aos="fade-up" data-aos-delay="200">
             <h2>Quem Somos</h2>
             <br>
             <p>
@@ -104,10 +105,10 @@
                 </li>
             </ul>
         </div>
-        <div class="flex-item-3 mx-2">
+        <div class="flex-item-3 mx-2" data-aos="fade-up" data-aos-delay="300">
             <img src="svg/svg-people1.svg" alt="" onload="SVGInject(this)">
         </div>
-        <div class="flex-item-1 flex-column mx-2 my-3">
+        <div class="flex-item-1 flex-column mx-2 my-3" data-aos="fade-up" data-aos-delay="350">
             <img src="svg/svg-people2.svg" class="mx-2 my-2" id="people2" alt="" onload="SVGInject(this)">
             <img src="svg/svg-people3.svg" class="mx-2 my-2" alt="" onload="SVGInject(this)">
         </div>
@@ -119,12 +120,12 @@
         <img src="svg/fignu7.svg" class="w-auto svg-invite" alt="" onload="SVGInject(this)">
 
         <section class="container hero py-5 mt-2 mb-3" id="Projetos">
-            <div class="flex-item-1 mx-2 py-3">
+            <div class="flex-item-1 mx-2 py-3" data-aos="fade-up" data-aos-delay="400">
                 <div class="logo-projeto">
-                    <img src="img/TalkTechLogo01.png" alt="">
+                    <img src="svg/esse-e-o-dj-do-baile.svg" alt="">
                 </div>
             </div>
-            <div class="flex-item-2 flex-column">
+            <div class="flex-item-2 flex-column" data-aos="fade-up" data-aos-delay="250">
                 <h1>Talktech</h1>
                 <p class="mt-2">Nosso aplicatico TalkTech tem como foco trazer informações e chats de corversa para esse nosso mundo de programação,
                     onde você pode fazer amigos e compartilhar seus códigos, como fosse seu portifolio. Nesse nosso projeto tambem vamos
@@ -147,7 +148,7 @@
         <img src="svg/fignu6.svg" class="w-auto svg-invite" alt="" onload="SVGInject(this)">
 
         <section class="container-swiper py-5" id="Equipe">
-            <div class="swiper-container">
+            <div class="swiper-container" data-aos="fade-up" data-aos-delay="0">
                 <div class="flex-center mb-4">
                     <h1 class="mb-3">Equipe Cosmos</h1>
                 </div>
@@ -345,7 +346,7 @@
         <img src="svg/fignu5.svg" class="w-auto svg-invite" alt="" onload="SVGInject(this)">
     
         <section class="container pb-4 mt-4 flex-start-top pt-5" id="Fale-conosco">
-            <div class="flex-item-1 ml-2 mr-5 py-3">
+            <div class="flex-item-1 ml-2 mr-5 py-3" data-aos="fade-up" data-aos-delay="300">
                 <h1>Formulário</h1>
                 <p>
                     Preencha o formulário para enviar um email para a Cosmos, 
@@ -359,7 +360,7 @@
                     </ul>
                 </div>
             </div>
-            <form class="formulario flex-item-1" method="POST" action="./controller/usuarioController.php" autocomplete="off">
+            <form class="formulario flex-item-1" method="POST" autocomplete="off" data-aos="fade-up" data-aos-delay="350">
 
                 <div class="titulo">
                 <h5>Fale Conosco</h5>
@@ -367,22 +368,22 @@
         
                 <div class="textfild">
                 <h2 class="mb-1" style="font-size: medium;">Nome:</h2>
-                <input class="input" id="nome" name="nome" type="text" placeholder="Nome Completo" required>
+                <input class="input" id="nome" name="nome" type="text" placeholder="Nome Completo" required autocomplete="off">
                 </div>
                 
                 <div class="textfild">
                 <h2 class="mb-1" style="font-size: medium;">Email:</h2>
-                <input class="input" id="email" name="email" type="email" placeholder="Email" required>
+                <input class="input" id="email" name="email" type="email" placeholder="Email" required autocomplete="off">
                 </div>
         
                 <div class="textfild">
                 <h2 class="mb-1" style="font-size: medium;">Telefone:</h2>
-                <input class="input" id="telefone" name="telefone" type="number" placeholder="Telefone" required>
+                <input class="input" id="telefone" name="telefone" type="number" placeholder="Telefone" required autocomplete="off">
                 </div>
                 
                 <div class="textfild">
                     <h2 class="mb-1" style="font-size: medium;">Mensagem:</h2>
-                    <textarea class="input" style="outline: none;" name="mensagem" id="" placeholder="Digite sua mensagem" cols="30" rows="10"></textarea>
+                    <textarea class="" id="mensagem" name="mensagem" placeholder="Digite sua Mensagem" cols="30" rows="10" required autocomplete="off"></textarea>
                 </div>
         
                 <button class="btn" type="submit">Enviar</button>
@@ -416,6 +417,10 @@
 
     <!---========= JS =========-->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="js/app.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
