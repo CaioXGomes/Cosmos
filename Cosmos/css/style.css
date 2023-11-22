@@ -105,8 +105,8 @@
   display: flex;
   list-style: none;
   position: relative;
-  padding: 8px 8px 8px 54px;
-  margin-bottom: 48px;
+  padding: 4px 4px 4px 50px;
+  margin-bottom: 36px;
 }
 .list-item::after {
   content: "";
@@ -491,6 +491,12 @@ a:hover {
 .btn-form:hover {
   cursor: pointer;
   transform: scale(1.03);
+}
+
+.center-talktech {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .s-0 {
@@ -1164,8 +1170,8 @@ header {
   transition: 0.5s ease;
   cursor: pointer;
   filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   top: 4px;
   left: 8px;
 }
@@ -1178,8 +1184,8 @@ header {
   background-size: cover;
   transition: 0.5s ease;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   top: 2px;
   left: 8px;
 }
@@ -1192,8 +1198,8 @@ header {
   background-size: cover;
   transition: 0.5s ease;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   top: 2px;
   left: 8px;
 }
